@@ -1,5 +1,5 @@
-Here is a group project that i decided to do all alone
-Simple Shell
+# Here is a group project that i decided to do all alone
+# Simple Shell
 Owner: Favour Egena
 
 General Objective
