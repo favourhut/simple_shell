@@ -5,18 +5,18 @@
  * main - Thsi function checks fro the argument count and vector
  * @argc: variable for argument count
  * @argv: variable pointer to an array of strings
- * Retuen: 0 on succes
+ * Return: 0 on success
  */
 
-int main(int argc, __attribute__((unused)) char **argv)
+int main(int argc, char **argv)
 {
 	char buffer[124];
 	int len, i;
 
 	/*converting the argc to a string*/
 	len = 0;
-	do
-	{
+
+	do {
 		buffer[len++] = '0' + argc % 10;
 		argc /= 10;
 	}
@@ -29,11 +29,11 @@ int main(int argc, __attribute__((unused)) char **argv)
 	write(1, "\n", 1);
 
 	/*Writting the argv to stdout*/
-	for (i =0; i < argc; i++)
+	for (i = 0; i < argc; i++)
 	{
 		write(1, argv[i], sizeof(argv[i]));
 		write(1, "\n", 1);
 	}
 
-	return(0);
+	return (0);
 }
