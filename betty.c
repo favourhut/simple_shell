@@ -24,7 +24,7 @@ int main(int argc, __attribute__((unused)) char **argv)
 	while
 		(argc > 0);
 	/*Writting the argc to stdout*/
-	write(1, "The argc of this command is", 29);
+	write(1, "The argc of this command is ", 29);
 	write(1, buffer, len);
 	write(1, "\n", 1);
 
